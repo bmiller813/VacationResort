@@ -44,5 +44,63 @@
       </nav>
 <!--                      MAIN                      -->
 <section class="book">
-    
+    <label>
+        Enter Name: <br>
+        <input  type="text" name="textContainer" value="name" id="nameEnter">
+    </label>
+    <label>
+        Enter Email:<br>
+        <input type="text" name="emailContainer" value="Email" id="emailEnter">
+    </label>
+    <label>
+        Check-in Date:<br>
+        <input type="date" id="inputDate">
+
+    </label>
+    <label>
+        Duration of Visit:
+        <input type="number" value="1" min="1" max="28"> Day
+    </label>
+
+    <div class="roomType" id="roomType">
+        <label>
+            <input type="radio" name="roomContainer" value="queen" id="queen" checked>
+            Queen
+        </label>
+        <label>
+            <input type="radio" name="roomContainer" value="king" id="king">
+            King
+        </label>
+        <label>
+            <input type="radio" name="roomContainer" value="twoBed" id="twoBed">
+            2-Bedroom Suite
+        </label>
+    </div>
+    <br>
+    <div class="visitorLimit">
+        <h3>Visitors</h3>
+        <label>
+            Adults:
+            <input type="number" value="1" min="1" max="4">
+        </label>
+        <label>
+            Children:
+            <input type="number" value="0" min="0" max="4">
+        </label>
+    </div>
+    <br>
+    <h3>Discounts</h3>
+    <label>
+        <input type="radio" name="roomDiscount" value="noDiscount" id="noDiscount">
+        None
+    </label>
+    <label>
+        <input type="radio" name="roomDiscount" value="seniorDiscount" id="seniorDiscount">
+        AAA/Senior
+    </label>
+    <label>
+        <input type="radio" name="roomDiscount" value="militaryDiscount" id="militaryDiscount">
+        Military
+    </label>
+
 </section>
