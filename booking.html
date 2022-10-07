@@ -59,8 +59,21 @@
     </label>
     <label>
         Duration of Visit:
-        <input type="number" value="1" min="1" max="28"> Day
+        <input type="number" value="1" min="1" max="28" id="daysVisit"> Day
     </label>
+
+    <div class="visitorNum">
+        <h3>Visitors</h3>
+        <label>
+            Adults:
+            <input type="number" value="1" min="1" max="4" id="adultNum">
+        </label>
+        <label>
+            Children:
+            <input type="number" value="0" min="0" max="4" id="kidNum">
+        </label>
+    </div>
+    <br>
 
     <div class="roomType" id="roomType">
         <label>
@@ -76,30 +89,20 @@
             2-Bedroom Suite
         </label>
     </div>
-    <br>
-    <div class="visitorLimit">
-        <h3>Visitors</h3>
-        <label>
-            Adults:
-            <input type="number" value="1" min="1" max="4">
-        </label>
-        <label>
-            Children:
-            <input type="number" value="0" min="0" max="4">
-        </label>
-    </div>
+
+    
     <br>
     <h3>Discounts</h3>
     <label>
-        <input type="radio" name="roomDiscount" value="noDiscount" id="noDiscount">
+        <input type="radio" name="roomDiscount" value="none" id="noDiscount">
         None
     </label>
     <label>
-        <input type="radio" name="roomDiscount" value="seniorDiscount" id="seniorDiscount">
+        <input type="radio" name="roomDiscount" value="senior" id="seniorDiscount">
         AAA/Senior
     </label>
     <label>
-        <input type="radio" name="roomDiscount" value="militaryDiscount" id="militaryDiscount">
+        <input type="radio" name="roomDiscount" value="military" id="militaryDiscount">
         Military
     </label>
 
